@@ -11,6 +11,9 @@ app.use("/api/account/", accountRouter);
 app.get("/", (req, res, next) => {
   res.json("hey hey hey hey !");
 });
+app.get("/home", (req, res, next) => {
+  res.json("This is my house");
+});
 // app.post("/register", (req, res, next) => {
 //   const name = req.body.name;
 //   const age = req.body.age;
